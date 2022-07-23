@@ -11,11 +11,11 @@ type Celsius struct {
 }
 
 func (v Celsius) ConvertToFahrenheit(arg float64) float64 {
-	//return math.Sin(arg)
+	return fahrenheitConversion(arg)
 }
 
 func (v Celsius) ConvertToKelvin(arg float64) float64 {
-	//	return math.Sin(arg)
+	return kelvinConversion(arg)
 }
 
 type Fahrenheit struct {
@@ -23,11 +23,11 @@ type Fahrenheit struct {
 }
 
 func (v Fahrenheit) ConvertToFahrenheit(arg float64) float64 {
-	//return math.Sin(arg)
+	return fahrenheitConversion(arg)
 }
 
 func (v Fahrenheit) ConvertToCelsius(arg float64) float64 {
-	//return math.Sin(arg)
+	return celsiusConversion(arg)
 }
 
 type Kelvin struct {
@@ -35,9 +35,22 @@ type Kelvin struct {
 }
 
 func (v Kelvin) ConvertToFahrenheit(arg float64) float64 {
-	//	return math.Sin(arg)
+	return fahrenheitConversion(arg)
 }
 
-func (v Kelvin) ConvertToKelvin(arg float64) float64 {
-	//	return math.Sin(arg)
+func (v Kelvin) ConvertToCelsius(arg float64) float64 {
+	return celsiusConversion(arg)
+}
+
+func kelvinConversion(arg float64) float64 {
+	return 0.0
+
+}
+func fahrenheitConversion(arg float64) float64 {
+	return 0.0
+
+}
+func celsiusConversion(arg float64) float64 {
+	return 0.0
+
 }
