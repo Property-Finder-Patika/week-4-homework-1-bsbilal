@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	mathFunction "./math/math"
+	mathFunction "./math/"
 )
 
 var flag bool = true
