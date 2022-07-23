@@ -1,12 +1,13 @@
 package main
 
 import (
-	mathFunction "/ch07/math"
 	"errors"
 	"fmt"
 	"math"
 	"os"
 	"strings"
+
+	mathFunction "./math/math"
 )
 
 var flag bool = true
