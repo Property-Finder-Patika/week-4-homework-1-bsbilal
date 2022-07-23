@@ -8,7 +8,17 @@ import (
 
 func main() {
 	fmt.Println("")
-	var f conversion.Fahrenheit
+	var fConversion conversion.Fahrenheit
 
-	conversion.UnitConversion.ConvertToFahrenheit(d.arg)
+	fConversion.ConvertToCelsius(25)
+	fConversion.ConvertToKelvin(25)
+
+	var kConversion conversion.Kelvin
+	kConversion.ConvertToCelsius(25)
+	kConversion.ConvertToFahrenheit(25)
+
+	var cConversion conversion.Celsius
+
+	cConversion.ConvertToFahrenheit(25)
+	cConversion.ConvertToKelvin(25)
 }
