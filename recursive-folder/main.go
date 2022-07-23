@@ -14,10 +14,12 @@ func main() {
 		return nil
 	})
 	if err != nil {
+		// may results with permission errors
 		fmt.Println(err)
 		return
 	}
 	for _, file := range fileList {
-		fmt.Println(file)
+
+		fmt.Println(file) //folders
 	}
 }
